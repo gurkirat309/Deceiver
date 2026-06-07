@@ -72,13 +72,13 @@ CHARACTER_POOL = [
         "name": "Mr. Bean",
         "archetype": "Confused Wildcard",
         "traits": "Gullible, unpredictable, chaotic, accidentally reveals truths",
-        "image": "mrbean.png",
+        "image": "mrbean.webp",
     },
     {
         "name": "Sherlock Holmes",
         "archetype": "Master Detective",
         "traits": "Logical, analytical, evidence-driven, hard to deceive",
-        "image": "sherlock.png",
+        "image": "sherlock.jpg",
     },
     {
         "name": "Light Yagami",
@@ -90,25 +90,25 @@ CHARACTER_POOL = [
         "name": "Batman",
         "archetype": "Vigilant Strategist",
         "traits": "Suspicious, calculated, information-gatherer, hard to manipulate",
-        "image": "batman.png",
+        "image": "batman.jpg",
     },
     {
         "name": "Tyrion Lannister",
         "archetype": "Political Genius",
         "traits": "Witty, persuasive, reads motivations, uses conversation as weapon",
-        "image": "tyrion.png",
+        "image": "tyrion.webp",
     },
     {
         "name": "Walter White",
         "archetype": "Calculating Survivor",
         "traits": "Patient, prideful, deceptive when needed, methodical planner",
-        "image": "walter.png",
+        "image": "walter.webp",
     },
     {
         "name": "Harry Potter",
         "archetype": "Courageous Hero",
         "traits": "Brave, justice-driven, instinct-based, resilient, trusts friends",
-        "image": "harry.png",
+        "image": "harry.webp",
     },
 ]
 

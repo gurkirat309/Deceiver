@@ -1,3 +1,5 @@
+import { getCharacterImage } from '../utils';
+
 export default function GamePage({
   gameState,
   me,
@@ -74,7 +76,7 @@ export default function GamePage({
                 <div className="w-10 h-10 bg-surface-container-highest flex items-center justify-center shrink-0 overflow-hidden">
                   {!p.is_human ? (
                     <img
-                      src={`/images/${p.character_name.toLowerCase().replace(/[\s.]/g, '')}.png`}
+                      src={getCharacterImage(p.character_name)}
                       alt={p.character_name}
                       className="w-full h-full object-cover filter grayscale-[30%]"
                       onError={(e) => {

@@ -1,3 +1,5 @@
+import { getCharacterImage } from '../utils';
+
 export default function GameOverPage({ gameState, onRestart }) {
   if (!gameState) return null;
 
@@ -62,7 +64,7 @@ export default function GameOverPage({ gameState, onRestart }) {
                         <span className="material-symbols-outlined text-secondary text-lg">person</span>
                       ) : (
                         <img
-                          src={`/images/${p.character_name.toLowerCase().replace(/[\s.]/g, '')}.png`}
+                          src={getCharacterImage(p.character_name)}
                           alt={p.character_name}
                           className="w-full h-full object-cover filter grayscale"
                           onError={(e) => { e.target.style.display = 'none'; }}

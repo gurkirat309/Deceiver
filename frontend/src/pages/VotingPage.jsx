@@ -1,3 +1,5 @@
+import { getCharacterImage } from '../utils';
+
 export default function VotingPage({ gameState, me, onVote, isLoading }) {
   if (!gameState) return null;
 
@@ -42,7 +44,7 @@ export default function VotingPage({ gameState, me, onVote, isLoading }) {
                 {/* Photo */}
                 <div className="relative w-full aspect-square bg-surface-container-highest overflow-hidden">
                   <img
-                    src={`/images/${p.character_name.toLowerCase().replace(/[\s.]/g, '')}.png`}
+                    src={getCharacterImage(p.character_name)}
                     alt={p.character_name}
                     className="w-full h-full object-cover filter grayscale-[50%] contrast-[1.3] group-hover:grayscale-0 transition-all duration-500"
                     onError={(e) => {

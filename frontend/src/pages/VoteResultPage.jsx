@@ -1,3 +1,5 @@
+import { getCharacterImage } from '../utils';
+
 export default function VoteResultPage({ gameState, onContinue }) {
   if (!gameState) return null;
 
@@ -34,7 +36,7 @@ export default function VoteResultPage({ gameState, onContinue }) {
             <div className="bg-surface-container border border-outline-variant/30 p-8 shadow-[4px_4px_0px_rgba(0,0,0,0.4)] mb-8 animate-fade-in-up" style={{ animationDelay: '0.4s' }}>
               <div className="w-24 h-24 mx-auto mb-4 bg-surface-container-highest overflow-hidden">
                 <img
-                  src={`/images/${eliminated.character_name.toLowerCase().replace(/[\s.]/g, '')}.png`}
+                  src={getCharacterImage(eliminated.character_name)}
                   alt={eliminated.character_name}
                   className="w-full h-full object-cover filter grayscale contrast-[1.5]"
                   onError={(e) => { e.target.style.display = 'none'; }}
