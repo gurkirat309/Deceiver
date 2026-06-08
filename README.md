@@ -14,7 +14,16 @@ The game is set in a dark, atmospheric detective noir theme, complete with rain 
 
 ## 🔍 Game UI Preview
 
-![Deceiver Game UI](./image.png)
+Here are some previews of the cinematic noir interface in action:
+
+### 💼 Investigation Desktop
+![Cinematic Title Screen](./image.png)
+
+### 💬 Active Interrogation Board
+![Active Chat and Suspicion Tracking](./image-1.png)
+
+### 🔨 Case Verdict (Banishment Stamp)
+![Banishment Stamp Reveal](./image-2.png)
 
 ---
 
