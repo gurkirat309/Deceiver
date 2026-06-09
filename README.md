@@ -145,3 +145,7 @@ Open `http://localhost:5173` in your browser.
 5.  **GameOver:**
     *   **Innocents Win:** The Deceiver is successfully voted out.
     *   **Deceiver Wins:** The Deceiver outnumbers or equals the remaining Innocents.
+
+
+    ---------------------------------------------------------------------------------------
+    ~Made with ❤️ by Gurkirat
