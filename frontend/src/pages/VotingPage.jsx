@@ -8,7 +8,7 @@ export default function VotingPage({ gameState, me, onVote, isLoading }) {
   );
 
   return (
-    <div className="relative min-h-screen w-full bg-surface overflow-hidden">
+    <div className="relative min-h-screen w-full bg-surface overflow-y-auto">
       {/* Grain & Vignette */}
       <div className="absolute inset-0 z-10 grain" />
       <div className="absolute inset-0 z-20 vignette" />

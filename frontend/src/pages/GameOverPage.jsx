@@ -11,7 +11,7 @@ export default function GameOverPage({ gameState, onRestart }) {
   const humanWon = (innocentsWin && myRole === 'innocent') || (!innocentsWin && myRole === 'traitor');
 
   return (
-    <div className="relative min-h-screen w-full bg-surface overflow-hidden">
+    <div className="relative min-h-screen w-full bg-surface overflow-y-auto">
       {/* Grain & Vignette */}
       <div className="absolute inset-0 z-10 grain" />
       <div className="absolute inset-0 z-20 vignette" />
@@ -120,13 +120,15 @@ export default function GameOverPage({ gameState, onRestart }) {
           )}
 
           {/* Restart */}
-          <button
-            onClick={onRestart}
-            className="dymo-button group relative px-10 py-4 bg-surface-container-highest border-2 border-secondary text-secondary font-label text-[12px] font-semibold uppercase tracking-widest hover:text-on-tertiary-fixed-variant hover:border-on-tertiary-fixed-variant transition-all duration-500 shadow-[4px_4px_0px_#000] animate-fade-in-up"
-            style={{ animationDelay: '1.2s' }}
-          >
-            <span className="relative z-10">NEW INVESTIGATION</span>
-          </button>
+          <div className="flex justify-center mt-6 mb-12">
+            <button
+              onClick={onRestart}
+              className="dymo-button group relative px-10 py-4 bg-surface-container-highest border-2 border-secondary text-secondary font-label text-[12px] font-semibold uppercase tracking-widest hover:text-on-tertiary-fixed-variant hover:border-on-tertiary-fixed-variant transition-all duration-500 shadow-[4px_4px_0px_#000] animate-fade-in-up cursor-pointer"
+              style={{ animationDelay: '1.2s' }}
+            >
+              <span className="relative z-10 font-bold">NEW INVESTIGATION</span>
+            </button>
+          </div>
         </div>
       </main>
     </div>

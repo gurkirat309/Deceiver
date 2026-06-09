@@ -8,7 +8,7 @@ export default function CharacterSelectPage({
   isLoading,
 }) {
   return (
-    <div className="relative min-h-screen w-full bg-surface overflow-hidden">
+    <div className="relative min-h-screen w-full bg-surface overflow-y-auto">
       {/* Grain & Vignette */}
       <div className="absolute inset-0 z-10 grain" />
       <div className="absolute inset-0 z-20 vignette" />
@@ -115,18 +115,18 @@ export default function CharacterSelectPage({
           </div>
 
           {/* Confirm Button */}
-          <div className="flex justify-center">
+          <div className="flex justify-center mt-6 mb-12">
             <button
               onClick={onConfirm}
               disabled={selectedChars.length !== 4 || isLoading}
               className={`dymo-button group relative px-12 py-4 font-label text-[12px] font-semibold uppercase tracking-widest
                 transition-all duration-500 shadow-[4px_4px_0px_#000]
                 ${selectedChars.length === 4
-                  ? 'bg-surface-container-highest border-2 border-secondary text-secondary hover:text-on-tertiary-fixed-variant hover:border-on-tertiary-fixed-variant animate-pulse-glow'
+                  ? 'bg-surface-container-highest border-2 border-secondary text-secondary hover:text-on-tertiary-fixed-variant hover:border-on-tertiary-fixed-variant animate-pulse-glow cursor-pointer'
                   : 'bg-surface-container border-2 border-outline-variant text-outline cursor-not-allowed'
                 }`}
             >
-              <span className="relative z-10">
+              <span className="relative z-10 font-bold">
                 {isLoading ? 'ASSEMBLING CASE...' : 'CONFIRM SUSPECTS'}
               </span>
             </button>
